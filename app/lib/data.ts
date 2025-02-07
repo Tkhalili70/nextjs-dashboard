@@ -10,7 +10,6 @@ import {
 import { formatCurrency } from './utils';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
-
 export async function fetchRevenue() {
   try {
     // Artificially delay a response for demo purposes.
@@ -29,6 +28,7 @@ export async function fetchRevenue() {
     throw new Error('Failed to fetch revenue data.');
   }
 }
+
 
 export async function fetchLatestInvoices() {
   try {
@@ -61,7 +61,6 @@ export async function fetchCardData() {
          SUM(CASE WHEN status = 'paid' THEN amount ELSE 0 END) AS "paid",
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
          FROM invoices`;
-
     const data = await Promise.all([
       invoiceCountPromise,
       customerCountPromise,
