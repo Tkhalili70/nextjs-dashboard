@@ -29,7 +29,14 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
-    "scripts/seed.js"
+    "scripts/seed.js",
+    "node_modules/.pnpm/bcryptjs@2.4.3/node_modules/bcryptjs/src/bcrypt.js",
+    "node_modules/.pnpm/bcryptjs@2.4.3/node_modules/bcryptjs/src/bcrypt.js",
+    "node_modules/.pnpm/bcryptjs@2.4.3/node_modules/bcryptjs/src/bcrypt.js",
+    "node_modules/.pnpm/bcrypt@5.1.1/node_modules/bcrypt/src/bcrypt",
+    "node_modules/.pnpm/bcrypt@5.1.1/node_modules/bcrypt/src/bcrypt",
+    "node_modules/.pnpm/bcrypt@5.1.1/node_modules/bcrypt/src/bcrypt",
+
   ],
   "exclude": ["node_modules"]
 }
